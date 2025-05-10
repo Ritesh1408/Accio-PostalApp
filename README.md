@@ -1,12 +1,89 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🇮🇳 Pincode Lookup App (React + Vite)
 
-Currently, two official plugins are available:
+This app allows users to search for Indian postal details by entering a 6-digit Pincode. It fetches data from the [Postal Pincode API](https://api.postalpincode.in/) and displays details like Post Office name, District, State, and more. Users can also filter results by post office name in real time.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 Features
 
-## Expanding the ESLint configuration
+- ✅ Lookup Indian pincode details via API
+- 🔍 Real-time filtering by post office name
+- 🚫 Error handling for invalid inputs and API issues
+- 🌀 Loader while fetching data
+- 🎨 Figma-based responsive UI
+- 🔔 Toast notifications using `react-toastify`
+- ⚡ Built with Vite + React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Tech Stack
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Axios](https://axios-http.com/)
+- [React Toastify](https://fkhadra.github.io/react-toastify/)
+- [CSS Modules or Tailwind/CSS (based on your setup)]
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/your-username/pincode-lookup-app.git
+````
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the App
+
+```bash
+npm run dev
+```
+
+> The app will be available at `http://localhost:5173`
+
+## 🔗 API Used
+
+> Endpoint:
+
+```
+https://api.postalpincode.in/pincode/<PINCODE>
+```
+
+## 📁 Folder Structure
+
+```
+src/
+│
+├── components/
+│   ├── PincodeForm.jsx
+│   ├── PostOfficeList.jsx
+│   ├── PostOfficeCard.jsx
+│   ├── Loader.jsx
+│   └── Loader.css
+│
+├── App.js
+├── App.css
+└── main.jsx
+```
+
+## 🧪 TODO / Improvements
+
+* ✅ Add Toast messages for errors and empty results
+* ⏳ Debounce filter input
+* ⬆️ Pagination or infinite scroll (if needed for large results)
+* 🌐 Add offline support using service workers (PWA)
+
+
+## 🧑‍💻 Author
+
+Ritesh Roushan Kumar
+💼 Passionate MERN Developer | DSA Enthusiast
+🔗 [LinkedIn](https://www.linkedin.com/in/riteshroushan14)
+
+---
+
+MIT License
+
+
